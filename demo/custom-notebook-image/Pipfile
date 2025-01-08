@@ -9,4 +9,4 @@ name = "pypi"
 lightgbm = "~=3.3.5"
 
 [requires]
-python_version = "3.9"
+python_version = "3.11"
