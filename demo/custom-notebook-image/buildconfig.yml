@@ -12,18 +12,18 @@ spec:
       imageChange:
         from:
           kind: ImageStreamTag
-          name: s2i-generic-data-science-notebook:2023.1
+          name: s2i-generic-data-science-notebook:2024.2
   source:
     git:
-      uri: https://github.com/redhat-na-ssa/rhods-custom-notebook-example.git
+      uri: https://github.com/srikantt/rhods-custom-notebook-example.git
     contextDir: demo/custom-notebook-image
   strategy:
     dockerStrategy:
       from:
         kind: ImageStreamTag
-        name: s2i-generic-data-science-notebook:2023.1
+        name: s2i-generic-data-science-notebook:2024.2
       dockerfilePath: Containerfile
   output:
     to:
       kind: ImageStreamTag
-      name: lightgbm:3.3.5
+      name: lightgbm:4.5.0
